@@ -17,7 +17,9 @@ function onSpeak(e){
 
 function exibeChuteNaTela(chute){
     elementoChute.innerHTML = `
-    <div>Voce disse </div>
+    <div>Voce disse</div>
     <span classe="box">${chute}</span>
     `
 }
+
+recognition.addEventListener('end', () => recognition.start())
